@@ -1,18 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-function Heading() {
-  return <h1> med iliass ni</h1>;
-}
+import App from "./App";
 
 ReactDOM.render(
   <div>
-    <Heading />
-    <ul>
-      <li>iliass</li>
-      <li>mohammed</li>
-      <li>affani</li>
-    </ul>
+    <App />
   </div>,
   document.getElementById("root")
 );
