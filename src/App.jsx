@@ -3,10 +3,24 @@ import Card from "./components/Card";
 import contacts from "./components/Contacts";
 import "./style.css"
 
+
+function creatCard (contact){
+
+  return < Card 
+           name= {contact.name} 
+           tel = { contact.phone}
+           img = { contact.imgURL }
+           email = { contact.email }
+           />
+
+}
+
 function App() {
   return (
     <div>
-      <h1 className="heading">My Contacts</h1>
+        {contacts.map(creatCard)}
+
+      {/* <h1 className="heading">My Contacts</h1>
       <Card
         name={contacts[0].name}
         img={contacts[0].imgURL}
@@ -24,7 +38,7 @@ function App() {
         img={contacts[2].imgURL}
         tel={contacts[2].phone}
         email={contacts[2].email}
-      />
+      /> */}
     </div>
   );
 }
