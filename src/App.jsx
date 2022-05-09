@@ -1,53 +1,29 @@
 import React from "react";
-import "./style.css";
-
-
-function Card (props) {
-
-  return (
-    <div className="my-carde" >
-
-      <h1>My Contacts</h1>
-
-      <h2>{props.name}</h2>
-
-      <img src={props.img} alt="avatar_img"/>
-
-      <p>{props.tel}</p>
-
-      <p>{props.email}</p>
-
-    </div>
-  );
-}
-
+import Card from "./components/Card";
+import contacts from "./components/Contacts";
+import "./style.css"
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <h1 className="heading">My Contacts</h1>
       <Card
-
-        name="benon"
-        img="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
-        tel="+123 456 789"
-        email="b@beyonce.com"
-
+        name={contacts[0].name}
+        img={contacts[0].imgURL}
+        tel={contacts[0].phone}
+        email={contacts[0].email}
       />
       <Card
-
-        name="7alima"
-        img="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
-        tel="+123 456 789"
-        email="b@beyonce.com"
-
+        name={contacts[1].name}
+        img={contacts[1].imgURL}
+        tel={contacts[1].phone}
+        email={contacts[1].email}
       />
       <Card
-
-        name="karima"
-        img="https://blackhistorywall.files.wordpress.com/2010/02/picture-device-independent-bitmap-119.jpg"
-        tel="+123 456 789"
-        email="b@beyonce.com"
-
+        name={contacts[2].name}
+        img={contacts[2].imgURL}
+        tel={contacts[2].phone}
+        email={contacts[2].email}
       />
     </div>
   );
