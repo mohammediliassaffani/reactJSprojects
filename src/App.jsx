@@ -3,7 +3,7 @@ import Card from "./components/Card";
 import emojipedia from "./components/emojipedia";
 import "./style.css"
 
-function emojis(emojis) {
+function emojias(emojis) {
   return (
     <Card
       key={emojis.id}
@@ -25,7 +25,7 @@ function App() {
       </h1>
 
       <dl className="dictionary">
-        {emojipedia.map(emojis)}
+        {emojipedia.map(emojias)}
 
       </dl>
     </div>
