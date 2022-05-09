@@ -1,18 +1,20 @@
 import React from "react";
-import Avatar from "./Avatar";
+
 
 function Card(props) {
   return (
-    <div className="card">
-      <div className="top">
-        <h2 className="name">{props.name}</h2>
-        <Avatar img = {props.img} />
+    <dl className="dictionary">
+
+      <div className="term">
+        <dt>
+          <p>{props.id}</p>
+          <span className="emoji" > {props.emoji}  </span>
+          <span className="name">{props.name}</span>
+          <dd>{props.meaning}</dd>
+        </dt>
       </div>
-      <div className="bottom">
-        <p className="info">{props.tel}</p>
-        <p className="info">{props.email}</p>
-      </div>
-    </div>
+
+    </dl>
   );
 }
 
