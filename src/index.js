@@ -1,9 +1,16 @@
 var numbers = [3, 56, 2, 48, 5];
 
+// function double(x) {
+//   return x * 2;
+// }
+// const newNumbers = numbers.map(double);
+
+var newNumbers = [];
+
 function double(x) {
-  return x * 2;
+  newNumbers.push(x * 3);
 }
-const newNumbers = numbers.map(double);
+numbers.forEach(double);
 
 console.log(newNumbers);
 
