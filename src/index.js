@@ -1,4 +1,18 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+ReactDOM.render(<App />, document.getElementById("root"));
+
 var numbers = [3, 56, 2, 48, 5];
+
+function square(x) {
+  return x * x;
+}
+const newNumbers = numbers.map(square);
+
+console.log(newNumbers);
+
+//
 
 // function double(x) {
 //   return x * 2;
@@ -34,10 +48,10 @@ var numbers = [3, 56, 2, 48, 5];
 
 //FindIndex - find the index of the first item that matches.
 
-import emojipedia from "./emojipedia";
+// import emojipedia from "./emojipedia";
 
-const newEmojipedia = emojipedia.map(function (emojiEntry) {
-  return emojiEntry.meaning.substring(0, 100);
-});
+// const newEmojipedia = emojipedia.map(function (emojiEntry) {
+//   return emojiEntry.meaning.substring(0, 100);
+// });
 
-console.log(newEmojipedia);
+// console.log(newEmojipedia);

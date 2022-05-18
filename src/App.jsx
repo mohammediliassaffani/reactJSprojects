@@ -1,32 +1,27 @@
 // import React from "react";
-// import Card from "./Components/Card";
-// import contacts from "./Components/Contacts";
+import Entry from "./Components/Entry";
+import emojipedia from "./emojipedia";
 
-// function App() {
-//   return (
-//     <div>
-//       <h1 className="heading">My Contacts</h1>
+function createEntry(emojiTerm) {
+  return (
+    <Entry
+      key={emojiTerm.id}
+      emoji={emojiTerm.emoji}
+      name={emojiTerm.name}
+      description={emojiTerm.meaning}
+    />
+  );
+}
 
-//       <Card
-//         name={contacts[0].name}
-//         img={contacts[0].imgURL}
-//         tel={contacts[0].phone}
-//         email={contacts[0].email}
-//       />
-//       <Card
-//         name={contacts[1].name}
-//         img={contacts[1].imgURL}
-//         tel={contacts[1].phone}
-//         email={contacts[1].email}
-//       />
-//       <Card
-//         name={contacts[2].name}
-//         img={contacts[2].imgURL}
-//         tel={contacts[2].phone}
-//         email={contacts[2].email}
-//       />
-//     </div>
-//   );
-// }
+function App() {
+  return (
+    <div>
+      <h1>
+        <span>emojipedia</span>
+      </h1>
+      <dl className="dictionary">{emojipedia.map(createEntry)}</dl>
+    </div>
+  );
+}
 
-// export default App;
+export default App;
