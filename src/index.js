@@ -36,4 +36,8 @@ var numbers = [3, 56, 2, 48, 5];
 
 import emojipedia from "./emojipedia";
 
-console.log(emojipedia);
+const newEmojipedia = emojipedia.map(function (emojiEntry) {
+  return emojiEntry.meaning.substring(0, 100);
+});
+
+console.log(newEmojipedia);
