@@ -1,19 +1,32 @@
-import React from "react";
-import Heading from "./Components/Heading";
-import pi, { year, age, salaire, brth } from "./Math";
+// import React from "react";
+// import Card from "./Components/Card";
+// import contacts from "./Components/Contacts";
 
-function App() {
-  return (
-    <div>
-      <Heading />
-      <ul>
-        <li>{pi}</li>
-        <li>{year + 1}</li>
-        <li>{age + 2}</li>
-        <li>{brth()}</li>
-        <li>{salaire()}</li>
-      </ul>
-    </div>
-  );
-}
-export default App;
+// function App() {
+//   return (
+//     <div>
+//       <h1 className="heading">My Contacts</h1>
+
+//       <Card
+//         name={contacts[0].name}
+//         img={contacts[0].imgURL}
+//         tel={contacts[0].phone}
+//         email={contacts[0].email}
+//       />
+//       <Card
+//         name={contacts[1].name}
+//         img={contacts[1].imgURL}
+//         tel={contacts[1].phone}
+//         email={contacts[1].email}
+//       />
+//       <Card
+//         name={contacts[2].name}
+//         img={contacts[2].imgURL}
+//         tel={contacts[2].phone}
+//         email={contacts[2].email}
+//       />
+//     </div>
+//   );
+// }
+
+// export default App;
