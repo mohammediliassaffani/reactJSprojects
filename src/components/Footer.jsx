@@ -1,18 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const date = new Date();
-
-const curentTime = date.getHours();
-
-export default function Footer() {
+function Footer() {
+  const year = new Date().getFullYear();
   return (
     <footer>
-        <p>
-        copyright message in 
-        </p>
-        <p>
-            {curentTime}
-        </p>
+      <p>Copyright ⓒ {year}</p>
     </footer>
-  )
+  );
 }
+
+export default Footer;
