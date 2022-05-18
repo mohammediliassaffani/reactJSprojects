@@ -5,20 +5,14 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 var numbers = [3, 56, 2, 48, 5];
 
-function square(x) {
-  return x * x;
-}
-const newNumbers = numbers.map(square);
+// const newNumbers = numbers.map( x => x * x );
 
-console.log(newNumbers);
+// console.log(newNumbers);
 
 //
 
-// function double(x) {
-//   return x * 2;
-// }
-// const newNumbers = numbers.map(double);
-// console.log(newNumbers);
+const newNumbers = numbers.map((x) => x * 2);
+console.log(newNumbers);
 
 //Map -Create a new array by doing something with each item in an array.
 
