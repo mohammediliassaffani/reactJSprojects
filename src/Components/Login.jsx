@@ -1,15 +1,15 @@
-import React from "react";
-import Input from "./Input";
+// import React from "react";
+// import Input from "./Input";
 
-function Login() {
-  return (
-    <div>
-      <form className="form">
-        <Input type="text" placeholder="Username" />
-        <Input type="password" placeholder="password" />
-        <button type="submit">login</button>
-      </form>
-    </div>
-  );
-}
-export default Login;
+// function Login() {
+//   return (
+//     <div>
+//       <form className="form">
+//         <Input type="text" placeholder="Username" />
+//         <Input type="password" placeholder="password" />
+//         <button type="submit">login</button>
+//       </form>
+//     </div>
+//   );
+// }
+// export default Login;
